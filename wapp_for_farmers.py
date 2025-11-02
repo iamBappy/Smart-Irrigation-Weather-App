@@ -16,7 +16,7 @@ class Wapp(QWidget):
         self.UI()
 
     def UI(self):
-        self.setWindowTitle("Weather App for Farmers")
+        self.setWindowTitle("Smart Irrigation Weather App")
         
         vbox=QVBoxLayout()
         vbox.addWidget(self.city_label)
@@ -146,3 +146,4 @@ if __name__=="__main__":
     w_app=Wapp()
     w_app.show()
     sys.exit(app.exec_())
+
