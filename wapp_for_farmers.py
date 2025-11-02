@@ -103,6 +103,8 @@ class Wapp(QWidget):
     def display_error(self, message):
       self.temperature_label.setStyleSheet("font-size: 30px;")
       self.temperature_label.setText(message)
+      self.emoji_label.clear()
+      self.description_label.clear()
 
     def display_weather(self, data):
       self.temperature_label.setStyleSheet("font-size: 70px;")
@@ -146,4 +148,5 @@ if __name__=="__main__":
     w_app=Wapp()
     w_app.show()
     sys.exit(app.exec_())
+
 
