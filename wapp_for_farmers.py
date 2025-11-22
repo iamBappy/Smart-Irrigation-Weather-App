@@ -60,7 +60,7 @@ class Wapp(QWidget):
         self.get_weather_button.clicked.connect(self.get_weather)
     
     def get_weather(self):
-        api_key= "381ddd01706435a141fdc7ade46dda81"
+        api_key= "######"
         city=self.city_input.text()
         url= f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
         
@@ -148,5 +148,6 @@ if __name__=="__main__":
     w_app=Wapp()
     w_app.show()
     sys.exit(app.exec_())
+
 
 
